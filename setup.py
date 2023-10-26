@@ -1,11 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
 setup(
-    name= 'Demo ',
-    version='0.1',
-    description='A simple demonstration package',
-    url='https://github.com/Johnle3/my_project.git',
-    author='John Le',
-    author_email='jkl4cxj@virginia.edu',
-    license='MIT',
-    packages=['demo']
+    name="booklover_package",
+    version="0.1",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    install_requires=[
+    ],
 )
